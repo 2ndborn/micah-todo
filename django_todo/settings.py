@@ -15,7 +15,7 @@ import dj_database_url
 if os.path.exists("env.py"):
     import env
 
-development = os.environ.get('DEVELOPMENT', False)
+development = os.environ.get('DEVELOPMENT')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,10 +28,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = {os.environ.get('SECRET_KEY')}
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
+
 DEBUG = development
 
 if development:
-    ALLOWED_HOSTS = ['localhost']
+    ALLOWED_HOSTS = ['8000-2ndborn-micah-todo-2e8yk29ky4.us2.codeanyapp.com']
 else:
     ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
