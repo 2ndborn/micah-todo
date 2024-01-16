@@ -28,7 +28,7 @@ SECRET_KEY = {os.environ.get('SECRET_KEY')}
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-2ndborn-micah-todo-2e8yk29ky4.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['micah-todo-982fde248461.herokuapp.com']
 
 
 # Application definition
